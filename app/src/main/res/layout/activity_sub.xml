@@ -6,24 +6,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".SubActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Demo Cycle_Life"
-        android:textColor="#32A642"
-        android:textSize="40sp" />
+        android:text="Chao lop CR424"
+        android:textColor="#40923C"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25sp" />
 
     <Button
-        android:id="@+id/btncall"
-        android:layout_width="200sp"
+        android:id="@+id/btnok"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:backgroundTint="#DCD9D9"
-        android:text="CALL DIAGLOG"
-        app:cornerRadius="0dp" />
-
+        android:backgroundTint="#A49F9F"
+        android:text="OK"
+        app:cornerRadius="0sp" />
 </LinearLayout>
