@@ -1,6 +1,7 @@
 package com.example.ex03;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -18,6 +19,51 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+        edt1 = findViewById(R.id.edta);
+        edt2 = findViewById(R.id.edtb);
+        edt3 = findViewById(R.id.edtc);
+        btncong = findViewById(R.id.btncong);
+        btntru = findViewById(R.id.btntru);
+        btnchia = findViewById(R.id.btnchia);
+        btnnhan = findViewById(R.id.btnnhan);
+        btncong.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int a = Integer.parseInt(edt1.getText()+"0");
+                int b = Integer.parseInt(edt2.getText()+"0");
+                edt3.setText("a + b =" + (a+b));
+            }
+        });
+        btntru.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int a = Integer.parseInt(edt1.getText()+"0");
+                int b = Integer.parseInt(edt2.getText()+"0");
+                edt3.setText("a - b =" + (a-b));
+            }
+        });
+        btnnhan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int a = Integer.parseInt(edt1.getText()+"0");
+                int b = Integer.parseInt(edt2.getText()+"0");
+                edt3.setText("a * b =" + (a*b));
+            }
+        });
+        btnchia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int a = Integer.parseInt(edt1.getText()+"0");
+                int b = Integer.parseInt(edt2.getText()+"0");
+                if (b==0)
+                {
+                    edt3.setText("B phai khac 0");
+                }
+                else {
+                    edt3.setText("a / b =" + (a/b));
+                }
+            }
+        });
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
