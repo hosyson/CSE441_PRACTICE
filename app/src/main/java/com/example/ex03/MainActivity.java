@@ -29,32 +29,32 @@ public class MainActivity extends AppCompatActivity {
         btncong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int a = Integer.parseInt(edt1.getText()+"0");
-                int b = Integer.parseInt(edt2.getText()+"0");
+                int a = Integer.parseInt(edt1.getText().toString());
+                int b = Integer.parseInt(edt2.getText().toString());
                 edt3.setText("a + b =" + (a+b));
             }
         });
         btntru.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int a = Integer.parseInt(edt1.getText()+"0");
-                int b = Integer.parseInt(edt2.getText()+"0");
+                int a = Integer.parseInt(edt1.getText().toString());
+                int b = Integer.parseInt(edt2.getText().toString());
                 edt3.setText("a - b =" + (a-b));
             }
         });
         btnnhan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int a = Integer.parseInt(edt1.getText()+"0");
-                int b = Integer.parseInt(edt2.getText()+"0");
+                int a = Integer.parseInt(edt1.getText().toString());
+                int b = Integer.parseInt(edt2.getText().toString());
                 edt3.setText("a * b =" + (a*b));
             }
         });
         btnchia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int a = Integer.parseInt(edt1.getText()+"0");
-                int b = Integer.parseInt(edt2.getText()+"0");
+                int a = Integer.parseInt(edt1.getText().toString());
+                int b = Integer.parseInt(edt2.getText().toString());
                 if (b==0)
                 {
                     edt3.setText("B phai khac 0");
