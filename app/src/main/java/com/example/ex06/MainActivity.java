@@ -1,6 +1,12 @@
 package com.example.ex06;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,7 +15,12 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-
+    EditText edtName, edtID, edtMultiLine;
+    Button btnSubmit;
+    RadioButton radioBtnIntermediate, radioBtnCollege, radioBtnUniversity;
+    CheckBox checkBoxNews, checkBoxBooks, checkBoxCode;
+    TextView txtError;
+    RadioGroup radioGroup;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
