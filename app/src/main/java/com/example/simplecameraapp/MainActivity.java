@@ -17,7 +17,8 @@ import androidx.core.content.ContextCompat;
 public class MainActivity extends AppCompatActivity {
     private static final int CAMERA_PERMISSION_CODE = 100;
     private static final int CAMERA_REQUEST_CODE = 101;
-
+    private ImageView imageView;
+    private Button captureButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
