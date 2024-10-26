@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- EditText để nhập thông tin về món ăn -->
+    <EditText
+        android:id="@+id/editTextMaMon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã Món" />
+
+    <EditText
+        android:id="@+id/editTextTenMon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên Món" />
+
+    <EditText
+        android:id="@+id/editTextMaLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã Loại" />
+
+    <EditText
+        android:id="@+id/editTextMoTa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mô Tả" />
+
+    <EditText
+        android:id="@+id/editTextDonGia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Đơn Giá" />
+
+    <EditText
+        android:id="@+id/editTextHinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hình Ảnh (Tên File)" />
+
+    <!-- Nút thêm món ăn -->
+    <Button
+        android:id="@+id/buttonThemMon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm Món" />
+
+</LinearLayout>
