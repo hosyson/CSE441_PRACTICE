@@ -5,20 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity">aaa
 
-    <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp"
-        android:background="#680ED0"
-        android:padding="16dp"
-        android:text="CAFE"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
@@ -42,12 +30,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btnAddToCart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Thêm vào giỏ hàng"
-        tools:layout_editor_absoluteX="203dp"
-        tools:layout_editor_absoluteY="75dp" />
+    da xoa buton
 
 </androidx.constraintlayout.widget.ConstraintLayout>
